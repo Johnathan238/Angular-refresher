@@ -1,3 +1,10 @@
 h1{
   color:coral;
+  width:500px;
+  margin: 0 auto;
+  background: gray;
+  text-align: center;;
+  justify-content: center;
 }
+
+

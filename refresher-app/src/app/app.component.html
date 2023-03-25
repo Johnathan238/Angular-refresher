@@ -1,11 +1,22 @@
 <h1>{{ title }}</h1>
 
-<button
+<ul class="nav nav-pills navbar-inverse">
+  <li role="presentation" ><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+<!-- <button
   type="button"
   [disabled]="canClick"
   (click)="sayMessage()">
   Trigger alert message
-</button>
+</button> -->
+
+<button type="button"
+  class="btn btn-primary btn-block"
+  [disabled]="canClick"
+  (click)="sayMessage()">Block level button</button>
 
 <p
   [id]="sayHelloId"
@@ -13,4 +24,7 @@
   You can set my color in the component!
 </p>
 
+
+
 <p>My color is {{ fontColor }}</p>
+
