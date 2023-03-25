@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'refresher-app';
+  fontColor = 'blue';
+  sayHelloId = 1;
+  canClick = false;
+  message = 'Hello, World';
+
+  sayMessage() {
+    alert(this.message);
+  }
 }
