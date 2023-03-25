@@ -6,25 +6,19 @@
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 
-<!-- <button
-  type="button"
-  [disabled]="canClick"
-  (click)="sayMessage()">
-  Trigger alert message
-</button> -->
 
 <button type="button"
   class="btn btn-primary btn-block"
   [disabled]="canClick"
   (click)="sayMessage()">Block level button</button>
 
-<p
+<!-- <p
   [id]="sayHelloId"
   [style.color]="fontColor">
   You can set my color in the component!
-</p>
+</p> -->
 
 
 
-<p>My color is {{ fontColor }}</p>
+<p>This Message is {{ message }}</p>
 
