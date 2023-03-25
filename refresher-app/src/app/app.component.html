@@ -1,16 +1,24 @@
 <h1>{{ title }}</h1>
 
-<button
-  type="button"
-  [disabled]="canClick"
-  (click)="sayMessage()">
-  Trigger alert message
-</button>
+<ul class="nav nav-pills navbar-inverse">
+  <li role="presentation" ><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
 
-<p
+
+<button type="button"
+  class="btn btn-primary btn-block"
+  [disabled]="canClick"
+  (click)="sayMessage()">Block level button</button>
+
+<!-- <p
   [id]="sayHelloId"
   [style.color]="fontColor">
   You can set my color in the component!
-</p>
+</p> -->
 
-<p>My color is {{ fontColor }}</p>
+
+
+<p>This Message is {{ message }}</p>
+
